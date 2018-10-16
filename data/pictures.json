@@ -1,0 +1,18 @@
+{
+    "pictures": [
+        {
+            "name": "coala",
+            "url": "https://i.ytimg.com/vi/WRMOTgH_p54/maxresdefault.jpg",
+            "format": "jpg",
+            "compressedSize": "200кб",
+            "originalSize": "1мб"
+        },
+        {
+            "name": "coala1",
+            "url": "http://animaljaws.com/wp-content/uploads/2014/12/koalas.jpg",
+            "format": "jpg",
+            "compressedSize": "300kb",
+            "originalSize": "1mb"
+        }
+    ]
+}
