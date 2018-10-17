@@ -10,3 +10,4 @@ fetch("./data/pictures.json")
   .catch(function(err) {
       console.log("error happened => ", err);
   });
+
