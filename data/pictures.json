@@ -1,5 +1,5 @@
 {
-    "pictures": [
+    "picture": [
         {
             "name": "coala",
             "url": "https://i.ytimg.com/vi/WRMOTgH_p54/maxresdefault.jpg",
@@ -16,3 +16,4 @@
         }
     ]
 }
+ 
