@@ -1,3 +1,38 @@
+var pictures = [{
+    src:'https://scontent-waw1-1.cdninstagram.com/vp/a9911f47f85739e5f4b8e57b445e1f6d/5C560C06/t51.2885-15/sh0.08/e35/s640x640/43169104_163062131308544_2668699210402157381_n.jpg',
+    compressedSize:200,
+    originalSize:800,
+},{
+    src:'https://scontent-waw1-1.cdninstagram.com/vp/a9911f47f85739e5f4b8e57b445e1f6d/5C560C06/t51.2885-15/sh0.08/e35/s640x640/43169104_163062131308544_2668699210402157381_n.jpg',
+    compressedSize:200,
+    originalSize:800,
+},{
+    src:'https://scontent-waw1-1.cdninstagram.com/vp/a9911f47f85739e5f4b8e57b445e1f6d/5C560C06/t51.2885-15/sh0.08/e35/s640x640/43169104_163062131308544_2668699210402157381_n.jpg',
+    compressedSize:200,
+    originalSize:800,
+},{
+    src:'https://scontent-waw1-1.cdninstagram.com/vp/a9911f47f85739e5f4b8e57b445e1f6d/5C560C06/t51.2885-15/sh0.08/e35/s640x640/43169104_163062131308544_2668699210402157381_n.jpg',
+    compressedSize:200,
+    originalSize:800,
+},{
+    src:'https://scontent-waw1-1.cdninstagram.com/vp/a9911f47f85739e5f4b8e57b445e1f6d/5C560C06/t51.2885-15/sh0.08/e35/s640x640/43169104_163062131308544_2668699210402157381_n.jpg',
+    compressedSize:200,
+    originalSize:800,
+},];
+
+function addRow(item){
+    // створити tr з усім вмістом
+    var tr = document.createElement('tr');
+    return tr;
+}
+
+// var table = your element
+
+for (var i =0; i<pictures.length;i++){
+    var tr = addRow(pictures[0])
+    table.appendChild(tr);
+}
+
 var picture = {
     compressedSize: "200кб <strong>(-80%)</strong>",
     originalSize: "1.2мб"
@@ -13,7 +48,7 @@ var picture3 = {
 var table = document.createElement("table"); // створюю таблицю
 table.className = "tbPictures"; //створюю клас
 pictures.appendChild(table); // додаю в div
-var tr = document.createElement("tr"); // create tr 
+var tr = document.createElement("tr"); // create tr
 tr.className = "trOrigin"; // created the class trPictures
 table.appendChild(tr);
 var td = document.createElement("td");//create td
@@ -30,7 +65,7 @@ table.appendChild(secondTR);
 var tdImg = document.createElement("td");
 tdImg.innerHTML="";
 secondTR.appendChild(tdImg);
-var tdimg = document.createElement("img");// foto in td 
+var tdimg = document.createElement("img");// foto in td
 tdimg.className = "fotoinTable";
 tdimg.src = "foto/church.jpg";
 tdImg.appendChild(tdimg);
@@ -48,13 +83,13 @@ tdDownload1.className="downloadInTable";
 tdDownload1.href = "foto/church.jpg";
 tdDownload1.download;
 tdDownload1.innerHTML="download";
-tdDataobj8.appendChild(tdDownload1); 
+tdDataobj8.appendChild(tdDownload1);
 var thirdTR = document.createElement("tr");
 table.appendChild(thirdTR);
 var tdImg2 = document.createElement("td");
 tdImg2.innerHTML="";
 thirdTR.appendChild(tdImg2);
-var tdimg2 = document.createElement("img");// foto in td 
+var tdimg2 = document.createElement("img");// foto in td
 tdimg2.className = "fotoinTable";
 tdimg2.src = "foto/summer.jpg";
 tdImg2.appendChild(tdimg2);
@@ -72,13 +107,13 @@ tdDownload2.className="downloadInTable";
 tdDownload2.href = "foto/summer.jpg";
 tdDownload2.download;
 tdDownload2.innerHTML="download";
-tdDataobj9.appendChild(tdDownload2); 
+tdDataobj9.appendChild(tdDownload2);
 var fourTR = document.createElement("tr");
 table.appendChild(fourTR);
 var tdDataobj4 = document.createElement("td");
 tdDataobj4.innerHTML="";
 fourTR.appendChild(tdDataobj4);
-var tdimg3 = document.createElement("img");// foto in td 
+var tdimg3 = document.createElement("img");// foto in td
 tdimg3.className = "fotoinTable";
 tdimg3.src = "foto/sun.jpg";
 tdDataobj4.appendChild(tdimg3);
@@ -96,4 +131,4 @@ tdDownload3.className="downloadInTable";
 tdDownload3.href = "foto/sun.jpg";
 tdDownload3.download;
 tdDownload3.innerHTML="download";
-tdDataobj7.appendChild(tdDownload3); 
+tdDataobj7.appendChild(tdDownload3);
