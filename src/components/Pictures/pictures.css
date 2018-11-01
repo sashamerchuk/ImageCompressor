@@ -1,8 +1,13 @@
 .pictures {
+  width: 500px;
 }
 
 .pictures__item {
   margin: 10px 0;
+}
+
+.dataPict {
+  text-align: center;
 }
 
 .pictures__image {
