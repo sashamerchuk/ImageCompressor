@@ -1,11 +1,16 @@
 import "./styles.css";
 
 import Pictures from "./components/Pictures";
+import Upload from "./components/Upload";
+
 
 function component() {
   let element = document.createElement("main");
+  const upload = new Upload();
   const pictures = new Pictures();
-  element.appendChild(pictures.render());
+  element.appendChild(upload.render());
+    element.appendChild(pictures.render());
+
   return element;
 }
 
