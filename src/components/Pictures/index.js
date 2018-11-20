@@ -108,6 +108,7 @@ export default class Pictures {
     th.innerHTML = "Compressed Size";
     return th;
   }
+
   origSize() {
     const th = document.createElement("th");
     th.innerHTML = "Original Size";
@@ -117,8 +118,10 @@ export default class Pictures {
     const tr = document.createElement("tr");
     tr.className = "pictures__item";
     tr.appendChild(this.emptyTd());
+
     tr.appendChild(this.compSize());
     tr.appendChild(this.origSize());
+
     return tr;
   }
 
