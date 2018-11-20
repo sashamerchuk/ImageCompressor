@@ -1,11 +1,17 @@
 export default class Upload {
+  constructor(props) {
+    this.props = props;
+  }
+
   renderInput() {
     const input = document.createElement("input");
     input.id = "menu_images";
     input.type = "file";
     input.name = "image";
     input.setAttribute("multiple", true);
-    input.addEventListener("change", this.onChange);
+    input.addEventListener("change", ({ target }) => {
+      this.props.onChange(Array.from(target.files));
+    });
 
     return input;
   }
@@ -17,29 +23,11 @@ export default class Upload {
     div.appendChild(this.renderImage());
     return div;
   }
+
   renderImage() {
     const image = document.createElement("img");
     image.id = "menu_image";
     image.className = "preview_img";
     return image;
   }
-  onChange(event) {
-    
-    const sizeFile = event.target.files.length;
-    Array.from(event.target.files).forEach(file => {
-    
-      if (sizeFile > 10) {
-        const fileInput = document.getElementById("menu_images");
-        
-      }
-      if (file.size > 500);{
-        alert("you photo is too big");
-      }
-    });
-  }
 }
-
-
-
-
-  
