@@ -5,7 +5,7 @@ export default class Upload {
     input.type = "file";
     input.name = "image";
     input.setAttribute("multiple", true);
-    input.addEventListener("change", this.onchange);
+    input.addEventListener("change", this.onChange);
 
     return input;
   }
@@ -23,16 +23,16 @@ export default class Upload {
     image.className = "preview_img";
     return image;
   }
-  onchange(event) {
-    console.log("Files arr:", event.target.files);
+  onChange(event) {
+    
     const sizeFile = event.target.files.length;
     Array.from(event.target.files).forEach(file => {
-      console.log("File is:", file);
+    
       if (sizeFile > 10) {
         const fileInput = document.getElementById("menu_images");
-        return (fileInput.disabled = true);
+        
       }
-      if (file.size > 5000);{
+      if (file.size > 500);{
         alert("you photo is too big");
       }
     });
