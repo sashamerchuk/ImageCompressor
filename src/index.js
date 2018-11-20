@@ -5,7 +5,9 @@ import Pictures from "./components/Pictures";
 function component() {
   let element = document.createElement("main");
   const pictures = new Pictures();
+
   element.appendChild(pictures.render());
+
   return element;
 }
 
