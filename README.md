@@ -4,4 +4,4 @@
 
 `npm start` для запуску продукту
 
-`npm server` для запуску node.js
+`npm run server` для запуску node.js
