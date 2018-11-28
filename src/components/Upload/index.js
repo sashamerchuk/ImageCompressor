@@ -8,6 +8,7 @@ export default class Upload {
     input.id = "menu_images";
     input.type = "file";
     input.name = "image";
+    input.accept = "image/*";
     input.setAttribute("multiple", true);
     input.addEventListener("change", ({ target }) => {
       this.props.onChange(Array.from(target.files));

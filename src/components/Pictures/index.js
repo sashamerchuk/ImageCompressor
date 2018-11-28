@@ -87,7 +87,6 @@ export default class Pictures {
     const tr = document.createElement("tr");
     tr.className = "pictures__item";
     tr.appendChild(this.emptyTd());
-
     tr.appendChild(this.compSize());
     tr.appendChild(this.origSize());
 
