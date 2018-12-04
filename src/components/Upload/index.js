@@ -1,3 +1,4 @@
+
 export default class Upload {
   constructor(props) {
     this.props = props;
@@ -21,6 +22,7 @@ export default class Upload {
     div.className = "upload";
     div.appendChild(this.renderInput());
     div.appendChild(this.renderImage());
+    div.appendChild(this.renderLabel());
     return div;
   }
 
@@ -29,5 +31,13 @@ export default class Upload {
     image.id = "menu_image";
     image.className = "preview_img";
     return image;
+  }
+  renderLabel(){
+    const label = document.createElement("label");
+    label.for="fileElem";
+    label.className="label"
+    label.innerHTML="Choose your photo!";
+    label.appendChild(this.renderInput());
+    return label;
   }
 }

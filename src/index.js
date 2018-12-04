@@ -1,4 +1,5 @@
 import "./styles.css";
+import "./components/Upload/styleButton.css";
 
 import Pictures from "./components/Pictures";
 import Upload from "./components/Upload";
