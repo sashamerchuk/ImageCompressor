@@ -1,4 +1,5 @@
 import "./pictures.css";
+
 import { POINT_CONVERSION_COMPRESSED } from "constants";
 
 export default class Pictures {
@@ -20,6 +21,16 @@ export default class Pictures {
     this.addPictures = this.addPictures.bind(this);
   }
 
+  fileReader(input) {
+    if (input.pictures && input.pictures[0]) {
+      let reader = new FileReader();
+
+      reader.onload = function(e) {
+        this.renderPicture = e.target.result;
+      };
+      reader.readAsDataURL(input.pictures[0]);
+    }
+  }
   addPictures(pictures) {
     this.pictures = [...this.pictures, ...pictures];
     this.render();
